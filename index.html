@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>E-Ticaret</h1>
+        <input type="text" placeholder="urun ismi giriniz">
+        <div class="buttons">
+            <button id="sepet-btn">Sepet</button>
+            <button>Kayit Ol</button>
+            <button>Giris Yap</button>
+        </div>
+    </header>
+    <main>
+        <section id="category-sec">
+            <h1>Kategoriler</h1>
+            <div class="categories">
+
+
+
+            </div>
+        </section>
+        <section id="product-sec">
+            <h1>Urunler</h1>
+            <div class="products">
+
+
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODAL -->
+    <div class="modal-wrapper active">
+        <div class="inner">
+            <div class="icon">
+                <img id="close-btn" src="icons8-close-48.png" alt="">
+            </div>
+            <div class="list"></div>
+            <p class="total-p">Toplam :$ <span class="total-span"></span></p>
+
+
+        </div>
+    </div>
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>

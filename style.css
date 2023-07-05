@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    background: linear-gradient(-225deg, #FF3CAC 0%, #562B7C 52%, #2B86C5 100%);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+header input {
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+}
+
+header .buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 10px;
+
+}
+
+header .buttons button {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header .buttons button:nth-child(1) {
+    background: black;
+    color: white;
+}
+
+header .buttons button:nth-child(2) {
+    background: rgb(111, 111, 226);
+    color: white;
+}
+
+header .buttons button:nth-child(3) {
+
+    background: crimson;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.category {
+    max-width: 300px;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.category img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.category span {
+    position: absolute;
+    bottom: 0;
+    background: white;
+    width: 70%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+
+}
+
+#product-sec {
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+
+
+}
+
+.product {
+    max-width: 250px;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+        rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+        rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
+
+
+}
+
+.product .bottom {
+    background: black;
+    width: 100%;
+    color: whitesmoke;
+    display: flex;
+
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.bottom p {
+    color: rgb(91, 175, 91);
+}
+
+.bottom button {
+    padding: 5px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    /* www.grabient.com/ alındı */
+    background: linear-gradient(-225deg, #FF3CAC 0%, #562B7C 52%, #2B86C5 100%);
+}
+
+.bottom button:hover {
+    scale: 0.9;
+    box-shadow: 2px 2px 20px white;
+}
+
+
+
+.modal-wrapper {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(128, 128, 128, 0.267);
+    top: 0;
+    left: 0;
+    display: none;
+    place-items: center;
+    z-index: 1000;
+}
+
+.active {
+    display: grid;
+}
+
+.inner {
+    background: white;
+    width: 70%;
+    height: 60%;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inner img {
+    width: 50px;
+    cursor: pointer;
+
+}
+
+.inner .icon {
+    display: flex;
+    justify-content: end;
+}
+
+.list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    overflow: auto;
+
+
+
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    align-items: center;
+    font-size: 12px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+        rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.list-item button {
+    border: 1px solid red;
+    padding: 3px 15px;
+    background: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.list-item img {
+    border-radius: 70%;
+}
+
+
+.total-p {
+
+
+    font-style: inherit;
+    font-weight: bolder;
+
+}
